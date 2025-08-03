@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>A-Frame scene</title>
+        <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            
+    <a-sky
+        color="lightgreen"
+    ></a-sky>
+            
+    <a-torus 
+        position="-2 4 -5"
+        color="green" 
+        arc="270" 
+        radius="1" 
+        radius-tubular="0.2"
+    ></a-torus>
+    
+<!--
+Hmm, you need a couple more attributes to make the cone work.
+Have a look at the documentation, it has some good hints.
+https://aframe.io/docs/1.1.0/primitives/a-cone.html
+-->
+    <a-cone 
+        position="2 4 -5"
+        color="red"
+    ></a-cone>
+
+<!--
+Hmm. What 3D shape has four sides? 
+Stuck: ask Google and check the documentation...
+-->
+    <a-box 
+        position="-2 0 -5"
+        color="orange"
+        wireframe=true
+    ></a-box>
+    
+<!--
+The purple shape looks odd. It looks a bit like a <hint> knot </hint>.
+There might be a shape like that in the docs
+You will need to mess with it's attributes.
+
+Put it at position="10 -5 -30"
+-->
+
+    
+        </a-scene>
+    </body>
+</html>
+

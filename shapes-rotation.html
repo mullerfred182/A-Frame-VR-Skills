@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>A-Frame scene</title>
+        <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            
+            
+<!--
+    Change the rotation for each of these shapes. 
+    You do not need to modify any other attributes.
+    
+    <hint> 90 and 45 are good numbers to use. </hint>
+-->
+            
+    <a-cylinder 
+        position="-2 3 -5"
+        color="red"
+        rotation="0 0 45"
+    ></a-cylinder>
+  
+    <a-box 
+        position="2 3 -5"
+        color="green"
+        rotation="0 0 0"
+    ></a-box>
+    
+    <a-box 
+        position="0 1 -5"
+        color="orange"
+    ></a-box>
+    
+    <!-- 
+        you might not get the exact rotation for the torus,
+        just make it look close enough.
+    -->
+    <a-torus 
+        position="0 -1 -5"
+        color="blue"
+    ></a-torus>
+    
+        </a-scene>
+    </body>
+</html>
+

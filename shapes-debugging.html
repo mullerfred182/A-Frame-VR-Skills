@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>A-Frame scene</title>
+        <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+
+<!-- Sky -->
+    <a sky
+        color=lightblue
+    ></a sky>
+
+    
+<!-- ground - Oops, it's upside down!, check the rotation-->
+    <a-plane
+        scale="50 50"
+        color="lightgreen"
+        rotation="90 0 0"
+    ></a-plane> 
+    
+    
+<!-- Hills - Odd that the color coding of the HTML goes wrong here. -->
+    <a-sphere 
+        position="-9 -2 -13"
+        color="mediumseagreen"
+        scale="8 4 8
+    ></a-sphere>        
+    <a-sphere 
+        position="9 -2 -13"
+        colour="mediumseagreen"
+        scale="8 4 8"
+    ></a-sphere> 
+    
+    
+<!-- cloud - something doesn't look quite right here... -->
+    <a-torus-knot
+        position="11 15 -20"
+        p="4" 
+        q="5" 
+        radius="3" 
+        radius-tubular="0.35"
+        rotaton="90 0 0"
+    ></a-torus-knot>
+
+    
+    
+<!-- Rainbow
+There's definitely a problem with blue
+There's nothing wrong with red, even though it doesn't look right. Hmm, I wonder where it's going wrong...
+-->
+    <a-torus 
+        position="0 0 -15"
+        color="blue"
+        radius 12
+        radius-tubular="0.25"
+    ></a-torus>
+    <a-torus 
+        position="0 0 -15"
+        color="green"
+        radius=11
+        radius-tubular="0.25"
+    ></a-torus>
+    <a-torus 
+        position="0 0 -15"
+        color="yellow"
+        radius=10
+        radius-tubular="0.25"
+    >
+    <a-torus 
+        position="0 0 -15"
+        color="red"
+        radius=9
+        radius-tubular="0.25"
+    ></a-torus>
+
+    
+        </a-scene>
+    </body>
+</html>
+

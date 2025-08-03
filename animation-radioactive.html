@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+        <title>Radioactive Signals</title>
+    </head>
+    <body>
+        <a-scene>
+            <!-- Set the sky -->
+            <a-sky color="black"></a-sky>
+            
+            <!-- Yellow cone
+                Add an animation property so that it rotates 180 degrees
+                about the x-axis -->
+            <a-cone color="yellow" radius-bottom=".5" radius-top="3"
+                position="8 5 -15" height="3"></a-cone>
+            
+            <!-- Green cone
+                Rotates about the y-axis by 180 degrees -->
+            <a-cone color="limegreen" radius-bottom=".5" radius-top="3"
+                position="-8 5 -15" height="3"
+                animation="
+                property: rotation;
+                from: 0 0 90;
+                to: 0 180 90;
+                loop: true;
+                dir: alternate;
+                "
+            ></a-cone>
+        </a-scene>
+    </body>
+</html>
